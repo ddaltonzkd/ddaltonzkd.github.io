@@ -2,42 +2,27 @@
 <html lang="en">
 <head>
   <!-- SCRIPTING LINKS FOR BOOTSTRAP ETC. -->
-  <meta charset="utf-8">
-  <meta name="viewport"
-     content="width=device-width, initial-scale=1, user-scalable=yes">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <title>Dalton's Tree Service</title>
 
   <style>
+  /* FULL PAGE STYLING START */
   body, html {
       height: 100%;
   }
-/* PARALLAX STYLING(WILL PROBABLY MOVE TO EXTERNAL PAGE) */
-  .parallax {
-      /* The image used */
-      /*Ran into issues using global url, had to use local*/
-      background-image: url("assets/texture-1102085_1920.jpg");
-
-      /* Full height */
-      height: 100%;
-
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+  /* JUMBOTRON STYLING TREE BARK TEXTURE */
+  .jumbotron {
+    background-image: url("assets/the-background-1415772_1920.jpg");
   }
-  /* STYLING FOR STICKY NAVIGATION BAR */
-  nav.sticky {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    background-color: #999966;
-    border: 2px solid #4CAF50;
-    padding: 10px;
-}
+
   </style>
 </head>
 
@@ -62,10 +47,25 @@
   <h4>Need to improve your view?</h4>
   <h4>Ready for a change?</h4>
 </div>
+<!-- CARD TO INSERT LOGO -->
+<!-- <div class="card" position="sticky-right"style="width: 18rem;">
+  <div class="rounded-circle">
+  <div class="card-body">
+    <center>
+    <h5 class="card-title">LEANING TREES HAVE YOU FEELING NERVOUS?</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </center> -->
+    <!-- <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a> -->
+  <!-- </div>
+</div>
+</div> -->
+
+</div>
 <!-- PARALLAX FOR HOME PAGE -->
   <div class="parallax"></div>
-
-  <div style="height:750px;background-color:#999966;font-size:36px">
+  <div style="height:750px;background-image:url(assets/the-background-1415772_1920.jpg);font-size:36px;font-weight:bold;">
   Scroll Up and Down this page to see the parallax scrolling effect.
   This div is just here to enable scrolling.
   Tip: Try to remove the background-attachment property to remove the scrolling effect.
@@ -80,18 +80,22 @@
   </div>
 
 <!-- THIS IS WHERE THE FOOTER INFORMATION WILL GO -->
-  <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-7">
-        <h1>Footer will go here later</h1>
-        <h2></h2>
+  <div id="foot" class="container-fluid"><center>
+        <h4>Leaning trees have you feeling nervous?</h4>
+        <h5>Be at ease with Dalton's Tree Service!</h5>
+        <sub>Dalton's Tree Service, LLC &copy;</sub>
+</center>
       </div>
-      <div class="col-md-3"></div>
+
   </div>
 </div>
-<br>
+
 
 <!-- SCRIPTING LINKS FOR JQUERY AND BOOTSTRAP -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>

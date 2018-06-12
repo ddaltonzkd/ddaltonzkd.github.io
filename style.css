@@ -1,5 +1,12 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 .button {
   padding-right: 20px;
@@ -7,3 +14,71 @@
 .Navigation {
   padding-right: 20px;
 };
+button.active {
+  font-style: normal;
+}
+@brand-success: #5cb85c;
+.jumbotron {
+  background-color:@brand-success: #5cb85c;
+};
+/* JUMBOTRON STYLING TREE BARK TEXTURE */
+.jumbotron {
+  background-image: url("assets/the-background-1415772_1920.jpg");
+}
+/* PARALLAX STYLING(WILL PROBABLY MOVE TO EXTERNAL PAGE) */
+.parallax {
+    /* The image used */
+    /*Ran into issues using global url, had to use local*/
+    background-image: url("assets/texture-1102085_1920.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+/* STYLING FOR STICKY NAVIGATION BAR */
+nav.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: #999966;
+  background-image: url("assets/tree-bark-texture.jpg");
+  border: 2px solid #4CAF50;
+  padding: 16px;
+}
+.card {
+  position: absolute;
+  background-color:  #00ff00;
+  text-align: justify;
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: inherit;
+  padding: 5px;
+  outline-style: dotted;
+  outline-color: black;
+  outline-offset: 1px;
+  border-width: thick;
+  border-style: ridge;
+  border-color: red;
+}
+#foot {
+/* background-color: #556B2F;
+padding: 16px;
+background-size: cover;
+border: 5px solid #556B2F; */
+
+/* background-image: url("assets/tree-bark-texture.jpg");
+position: -webkit-sticky;
+position: sticky;
+padding: 20px;
+background-size: cover;
+background-repeat: repeat; */
+}
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="js/bootstrap.min.js"></script>
