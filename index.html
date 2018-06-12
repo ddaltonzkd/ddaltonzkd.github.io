@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- SCRIPTING LINKS FOR BOOTSTRAP ETC. -->
   <meta charset="utf-8">
   <meta name="viewport"
      content="width=device-width, initial-scale=1, user-scalable=yes">
@@ -13,7 +14,7 @@
   body, html {
       height: 100%;
   }
-
+/* PARALLAX STYLING(WILL PROBABLY MOVE TO EXTERNAL PAGE) */
   .parallax {
       /* The image used */
       background-image: url("https://cdn.pixabay.com/photo/2015/12/21/05/45/texture-1102085_1280.jpg");
@@ -27,21 +28,43 @@
       background-repeat: no-repeat;
       background-size: cover;
   }
+  /* STYLING FOR STICKY NAVIGATION BAR */
+  nav.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: #999966;
+    border: 2px solid #4CAF50;
+    padding: 10px;
+}
   </style>
 </head>
-<!-- <style>
-body {
 
-	background: url("https://cdn.pixabay.com/photo/2015/12/21/05/45/texture-1102085_1280.jpg") repeat;
-
-}
-</style> -->
 
 <body>
-<nav id="navbar-example2" class="navbar navbar-light bg-light">  <h1>Dalton's Tree Service</h1> </nav>
+<!-- NAVIGATION BAR FOR HOME PAGE (HOME BUTTON DISABLED) -->
+<nav id="navbar-example2" class="sticky" position="sticky">
+  <h1></h1>
+  <button type="button" class="btn btn-primary btn-lg disabled">Home</button>
+  <button type="button" class="btn btn-primary btn-lg">Services</button>
+  <button type="button" class="btn btn-primary btn-lg">Contact Us</button>
+  <p>Buttons will be linked to external html documents</p>
+</nav>
+
+<!-- JUMBOTRON FOR TOP OF HOME PAGE -->
+<div class="jumbotron">
+<h1>Dalton's Tree Service</h1>
+<hr />
+  <h3>Overgrown tree limbs causing you trouble?</h3>
+  <h4>Old trees with bad spots got you worried?</h4>
+  <h4>Need brush cleared from your yard?</h4>
+  <h4>Need to improve your view?</h4>
+  <h4>Ready for a change?</h4>
+</div>
+<!-- PARALLAX FOR HOME PAGE -->
   <div class="parallax"></div>
 
-  <div style="height:1000px;background-color:red;font-size:36px">
+  <div style="height:750px;background-color:#999966;font-size:36px">
   Scroll Up and Down this page to see the parallax scrolling effect.
   This div is just here to enable scrolling.
   Tip: Try to remove the background-attachment property to remove the scrolling effect.
@@ -55,16 +78,19 @@ body {
       <div class="col-md-1"></div>
   </div>
 
+<!-- THIS IS WHERE THE FOOTER INFORMATION WILL GO -->
   <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-7">
-        <h1>Dalton's Tree Service</h1>
+        <h1>Footer will go here later</h1>
         <h2></h2>
       </div>
       <div class="col-md-3"></div>
   </div>
 </div>
 <br>
+
+<!-- SCRIPTING LINKS FOR JQUERY AND BOOTSTRAP -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
