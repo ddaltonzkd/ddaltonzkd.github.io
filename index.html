@@ -17,6 +17,7 @@
   /* FULL PAGE STYLING START */
   body, html {
       height: 100%;
+      background-image: url("assets/dark-black-wood-texture-background.jpg");
   }
   /* JUMBOTRON STYLING TREE BARK TEXTURE */
   .jumbotron {
@@ -24,6 +25,7 @@
   }
 
   </style>
+
 </head>
 
 
@@ -31,53 +33,70 @@
 <!-- NAVIGATION BAR FOR HOME PAGE (HOME BUTTON DISABLED) -->
 <nav id="navbar-example2" class="sticky" position="sticky">
   <h1></h1>
-  <button type="button" class="btn btn-primary btn-lg disabled">Home</button>
-  <button type="button" class="btn btn-primary btn-lg">Services</button>
-  <button type="button" class="btn btn-primary btn-lg">Contact Us</button>
-  <p>Buttons will be linked to external html documents</p>
+
+  <!-- <button type="button" class="btn btn-primary btn-lg disabled" href>Home</button>
+  <button type="button" class="btn btn-primary btn-lg">Services</button> -->
+  <a href="index.html" class="buttons_position"><img src="assets/navLinkHome.png" height="100" width="120"></a>
+  <a href="services.html" class="buttons_position"><img src="assets/navLinkServices.png" height="100" width="120"></a>
+  <a href="contactUs.html" class="buttons_position"><img src="assets/navLinkContact.png" height="100" width="120"></a>
+
+  <!-- <button type="button" class="btn btn-primary btn-lg" href="contact.html">Contact Us</button>
+  <p>Buttons will be linked to external html documents</p> -->
 </nav>
+    </nav>
 
-<!-- JUMBOTRON FOR TOP OF HOME PAGE -->
-<div class="jumbotron">
-<h1>Dalton's Tree Service</h1>
-<hr />
-  <h3>Overgrown tree limbs causing you trouble?</h3>
-  <h4>Old trees with bad spots got you worried?</h4>
-  <h4>Need brush cleared from your yard?</h4>
-  <h4>Need to improve your view?</h4>
-  <h4>Ready for a change?</h4>
-</div>
-<!-- CARD TO INSERT LOGO -->
-<!-- <div class="card" position="sticky-right"style="width: 18rem;">
-  <div class="rounded-circle">
-  <div class="card-body">
-    <center>
-    <h5 class="card-title">LEANING TREES HAVE YOU FEELING NERVOUS?</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </center> -->
-    <!-- <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a> -->
-  <!-- </div>
-</div>
-</div> -->
+    <div id="quote" class="container">
 
+      <p>
+<center>
+        <button id="quotes" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"style="border-bottom-left-radius:25%;border-bottom-right-radius:25%;border-top-right-radius:10%;border-top-left-radius:10%;height:224px;width:90%;background-color:inherit;background-image:url(assets/freequotefinal.png)">
+
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="form-group">
+          <label for="name">Name:</label>
+  <input type="text" class="form-control" id="name">
 </div>
+<div class="form-group">
+  <label for="email">Email:</label>
+  <input type="text" class="form-control" id="email">
+</div>
+<div class="form-group">
+  <label for="phone">Phone #:</label>
+  <input type="text" class="form-control" id="phone">
+</div>
+<div class="form-group">
+  <label for="description">Service</label>
+  <div class="col-">
+        <textarea id="subject" name="subject" placeholder="Please give a brief description of the services you are inquiring about.." style="height:100px font-style:inherit; color:black;" ></textarea>
+        </div>
+      </div>
+
+    </div>
+
+</center>
 <!-- PARALLAX FOR HOME PAGE -->
   <div class="parallax"></div>
-  <div style="height:750px;background-image:url(assets/the-background-1415772_1920.jpg);font-size:36px;font-weight:bold;">
-  Scroll Up and Down this page to see the parallax scrolling effect.
-  This div is just here to enable scrolling.
-  Tip: Try to remove the background-attachment property to remove the scrolling effect.
+  <div style="height:450px;background-image:url(assets/Black-texture-small-design-pattern-background-wallpapers-HD-for-tables.jpg);font-size:36px;color:white;font-weight:bold;font-family:fantasy;padding: 50px;">
+Overgrown tree limbs causing you trouble? <br>
+  Old trees with bad spots got you worried? <br>
+  Need brush cleared from your yard? <br>
+  Need to improve your view?
+  Maybe you're just ready for a change of scenery without leaving home.
   </div>
 
   <div class="parallax"></div>
 <div class="container-fluid">
-  <div class="row">
+  <!-- <div class="row">
       <div class="col-md-1"></div>
-      <div class="col-md-10"></div>
-      <div class="col-md-1"></div>
+      <div class="col-md-10"></div> -->
+      <!-- <div class="col-md-1"></div> -->
   </div>
+
+  </div>
+
+
 
 <!-- THIS IS WHERE THE FOOTER INFORMATION WILL GO -->
   <div id="foot" class="container-fluid"><center>
@@ -87,8 +106,6 @@
 </center>
       </div>
 
-  </div>
-</div>
 
 
 <!-- SCRIPTING LINKS FOR JQUERY AND BOOTSTRAP -->

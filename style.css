@@ -7,8 +7,25 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+.buttons_position {
+    padding: 0 0 0 10px;
+    border: 0px;
+    margin: 0px;
+}
+quotes.button {
+  border-radius: 50%;
+}
+.buttons_position a:hover {
+    background-image: url("assets/log-311669_960_720.png");
+    background-repeat: no-repeat;
+    width: 2149px;
+    height: 49px;
+    padding: 0 0 0 10px;
+    border: 0px;
+    margin: 0px;
+}
 .button {
+  image: url("assets/log-311669_960_720.png");
   padding-right: 20px;
 };
 .Navigation {
@@ -29,7 +46,7 @@ button.active {
 .parallax {
     /* The image used */
     /*Ran into issues using global url, had to use local*/
-    background-image: url("assets/texture-1102085_1920.jpg");
+    background-image: url("assets/dark-black-wood-texture-background.jpg");
 
     /* Full height */
     height: 100%;
@@ -45,10 +62,10 @@ nav.sticky {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  background-color: #999966;
-  background-image: url("assets/tree-bark-texture.jpg");
-  border: 2px solid #4CAF50;
-  padding: 16px;
+  background-color: black;
+  background-image: url("assets/navBg.jpeg");
+  border-bottom: 10px outset #1E1816;
+  padding: 5px;
 }
 .card {
   position: absolute;
@@ -64,6 +81,12 @@ nav.sticky {
   border-width: thick;
   border-style: ridge;
   border-color: red;
+}
+#quote {
+  background-image: url("assets/dark-black-wood-texture-background.jpg");
+  background-repeat: repeat;
+  font-style: normal; color: white;
+
 }
 #foot {
 /* background-color: #556B2F;
