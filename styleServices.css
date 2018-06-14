@@ -7,6 +7,14 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+body, html {
+  background-color: #fb8822;
+}
+
+li {
+  @include text-hide;
+}
 .buttons_position {
     padding: 0 0 0 10px;
     border: 0px;
@@ -30,26 +38,10 @@ quotes.button {
 };
 .Navigation {
   padding-right: 20px;
+  image: url("assets/log-311669_960_720.png");
 };
 button.active {
   font-style: normal;
-}
-
-/* PARALLAX STYLING(WILL PROBABLY MOVE TO EXTERNAL PAGE) */
-.parallax {
-    /* The image used */
-    /*Ran into issues using global url, had to use local*/
-    background-image: url("assets/dark-black-wood-texture-background.jpg");
-
-    /* Full height */
-    /* REPOSITIONED TO FIT CARDS */
-    height: 125%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
 }
 /* STYLING FOR STICKY NAVIGATION BAR */
 nav.sticky {
@@ -61,33 +53,6 @@ nav.sticky {
   border-bottom: 10px outset #1E1816;
   padding: 5px;
 }
-.card {
-  position: absolute;
-  background-color:  #00ff00;
-  background-image: url(assets/7853.jpeg);
-  text-align: justify;
-  font-family: fantasy;
-  font-weight: bold;
-  font-size: inherit;
-  padding: 100px;
-  outline-style: groove;
-  outline-color: inherit;
-  outline-width: thick;
-  outline-offset: 48px;
-  border-width: thick;
-  border-style: ridge;
-  border-color: #472c1d;
-}
-#quotes {
-  font-style:normal; color:white;
-}
-#quote {
-  background-image: url("assets/chainsaw.gif");
-  background-repeat: no-repeat;
-  background-position: center;
-  font-style: normal color:
-
-}
 #foot {
 text-align:center;
 font-style:normal;color:white;
@@ -97,33 +62,12 @@ padding: 16px;
 background-size: cover;
 border-top: 5px groove black;
 }
-#contentMain {
-  position: absolute;
-top: 70%; left: 40%; right: 40%;
-font-style:normal; color:white;
+.text-hide {
+  background-image:url(assets/log-311669_960_720.png);
 }
-#contentMain2 {
+#firstLinks {
+  @include text-hide;
 
-  position: absolute;
-bottom:50%;left:40%;right:50%;top:2500px;
-  font-style:normal: color:white;
-}
-contentMain2.card {
-  position: absolute;
-  background-color:  #00ff00;
-  background-image: url(assets/7853.jpeg);
-  text-align: justify;
-  font-family: fantasy;
-  font-weight: bold; color:white;
-  font-size: inherit;
-  padding: 100px;
-  outline-style: groove;
-  outline-color: inherit;
-  outline-width: thick;
-  outline-offset: 28px;
-  border-width: thick;
-  border-style: ridge;
-  border-color: #472c1d;
 }
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

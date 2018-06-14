@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
   <!-- SCRIPTING LINKS FOR BOOTSTRAP ETC. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -30,60 +34,81 @@
 
 
 <body>
+  <div>
 <!-- NAVIGATION BAR FOR HOME PAGE (HOME BUTTON DISABLED) -->
 <nav id="navbar-example2" class="sticky" position="sticky">
   <h1></h1>
 
-  <!-- <button type="button" class="btn btn-primary btn-lg disabled" href>Home</button>
-  <button type="button" class="btn btn-primary btn-lg">Services</button> -->
   <a href="index.html" class="buttons_position"><img src="assets/navLinkHome.png" height="100" width="120"></a>
   <a href="services.html" class="buttons_position"><img src="assets/navLinkServices.png" height="100" width="120"></a>
   <a href="contactUs.html" class="buttons_position"><img src="assets/navLinkContact.png" height="100" width="120"></a>
 
-  <!-- <button type="button" class="btn btn-primary btn-lg" href="contact.html">Contact Us</button>
-  <p>Buttons will be linked to external html documents</p> -->
 </nav>
     </nav>
+  </div>
 
+
+<!-- DROPDOWN FORM MENU FROM CUSTOM FREE QUOTES IMAGE BUTTON -->
     <div id="quote" class="container">
 
       <p>
 <center>
-        <button id="quotes" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"style="border-bottom-left-radius:25%;border-bottom-right-radius:25%;border-top-right-radius:10%;border-top-left-radius:10%;height:224px;width:90%;background-color:inherit;background-image:url(assets/freequotefinal.png)">
+        <button id="quotes" class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"style="font-style:normal;color:white;border-bottom-left-radius:25%;border-bottom-right-radius:25%;border-top-right-radius:10%;border-top-left-radius:10%;height:224px;width:56%;background-color:inherit;background-image:url(assets/freequotefinal.png)">
 
         </button>
       </p>
       <div class="collapse" id="collapseExample">
         <div class="form-group">
-          <label for="name">Name:</label>
+          <label for="name"style=font-style:normal;color:white;>Name:</label>
   <input type="text" class="form-control" id="name">
 </div>
 <div class="form-group">
-  <label for="email">Email:</label>
+  <label for="email"style="font-style:normal;color:white;">Email:</label>
   <input type="text" class="form-control" id="email">
 </div>
 <div class="form-group">
-  <label for="phone">Phone #:</label>
+  <label for="phone"style=font-style:normal;color:white;>Phone #:</label>
   <input type="text" class="form-control" id="phone">
 </div>
 <div class="form-group">
-  <label for="description">Service</label>
+  <label for="description"style=font-style:normal;color:white;>Service</label>
   <div class="col-">
         <textarea id="subject" name="subject" placeholder="Please give a brief description of the services you are inquiring about.." style="height:100px font-style:inherit; color:black;" ></textarea>
         </div>
+        <br>
+        <div class="col-">
+        <input type="submit" class="btn btn-info" value="Get your quote">
+</div>
       </div>
 
     </div>
-
+</div>
 </center>
+<!-- END OF CODE FOR FREE QUOTES FORM AREA -->
+
+
+<div id="contentMain" class="card-deck">
+
+<div class="card" style="width: 40rem;height: 55rem;position:absolute;top: 50%; left: center; right: center;">
+  <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+  <div class="card-body">
+    <h1 class="card-title">Quality service is our #1 goal!</h1>
+    <h2 class="card-text">Tree limbs obstructing your view? Does your home make you feel comfortable and proud? Clear up the view around your home and rest assured knowing you are in good hands with Dalton's Tree Service.</h2>
+    <h6>Before image of a satisfied customer<h6>
+    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+  </div>
+</div>
+</div>
+
 <!-- PARALLAX FOR HOME PAGE -->
   <div class="parallax"></div>
-  <div style="height:450px;background-image:url(assets/Black-texture-small-design-pattern-background-wallpapers-HD-for-tables.jpg);font-size:36px;color:white;font-weight:bold;font-family:fantasy;padding: 50px;">
+  <div style="height:1010;width:2600px;background-image:url(assets/bggif.gif);background-repeat:repeat;background-position:500rm;max-width:100%;font-size:36px;color:white;font-weight:bold;font-family:fantasy;padding: 10px;padding-top:"><center>
 Overgrown tree limbs causing you trouble? <br>
   Old trees with bad spots got you worried? <br>
   Need brush cleared from your yard? <br>
-  Need to improve your view?
-  Maybe you're just ready for a change of scenery without leaving home.
+  Need to improve your view?<br>
+  Or just ready for a change<br> of scenery around your home.
+</center>
   </div>
 
   <div class="parallax"></div>
@@ -95,7 +120,19 @@ Overgrown tree limbs causing you trouble? <br>
   </div>
 
   </div>
+<!-- END OF CODE FOR HOME PAGE PARRALAX -->
+<div id="contentMain2" class="card-deck">
 
+<div class="card" style="width:50rem;height:55rem;outline-style:groove;outline-color:white;outline-offset:40px;background-image:url(assets/7854.jpeg);font-style:normal;color:white;">
+  <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+  <div class="card-body">
+    <h1 class="card-title">Clear your view without compromising your landscape.</h1>
+    <h2 class="card-text">Clear up those overgrown limbs and open your view to show off your home. You work hard to keep up your home, let us work hard to make it look its best!</h2>
+    <h6>After image of a satisfied customer<h6>
+    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+  </div>
+</div>
+</div>
 
 
 <!-- THIS IS WHERE THE FOOTER INFORMATION WILL GO -->
